@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-left:200px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.navbar .nav-links li a i {
+    font-size: 20px; 
+    color: #f39c12;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f39c12;
+}
+
+.navbar .nav-links li a:hover i {
+    color: #333; 
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1728399195162-81451ee77a6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 .highlight {
+    color: #f39c12;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-left: 225px;
+}
+
+
+.btn-yellow {
+    background-color: #f39c12;
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color:#f2f2f2 ; 
+}
+
+.btn-white:hover {
+    background-color: #e67e22; 
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; 
+}
+
+.services-content {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.not{
+    position: relative;
+    font-weight: normal;
+}
+/* undeline */
+.underline {
+    position: relative;
+    font-weight: normal;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #FFA500; 
+    bottom: -5px; 
+    left: 0;
+}
+
+.btn-orange {
+    background-color: #ffffff;
+    color: #333;
+    border: 4px solid #f39c12;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-orange:hover {
+    background-color:#f39c12 ; 
+    color: #fff;
+}
+
+/* Industry Pros Section */
+.industry-pros {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.industry-pros h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.pros-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.pro-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    margin: 20px;
+    padding: 20px;
+}
+
+.pro-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.pro-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pro-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Underline Class */
+.underline {
+    position: relative;
+    font-weight: normal;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #FFA500; 
+    bottom: -5px; 
+    left: 0;
+}

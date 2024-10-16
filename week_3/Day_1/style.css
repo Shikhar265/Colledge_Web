@@ -1,0 +1,14 @@
+/* article +div -->adjacent combinator
+articla > div -->  */
+article div{
+    color: aqua;
+}
+div section{
+    color: antiquewhite;
+}
+p+div{
+    color: blueviolet;
+}/* p and next div only  */
+p~div{
+    color: blueviolet;
+}/* p and next all div */

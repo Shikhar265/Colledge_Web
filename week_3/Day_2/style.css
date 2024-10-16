@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 140px;
+    width: 140px;
+    border: 2px solid red;
+    margin-bottom: 30px;/* bahar se*/
+    padding: 30px;/* andar se */
+    margin: 2px auto;
+}
+span{
+    height: 140px;
+    width: 140px;
+    border: 2px solid red;
+    margin-bottom: 30px;/* bahar se*/
+    padding: 30px;/* andar se */
+    margin: 2px auto;
+    /* display: inline-block; */
+}

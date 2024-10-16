@@ -1,0 +1,21 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(20,1fr);
+    grid-gap: 30px;
+    grid: row 0;
+    grid: column 0;
+    border: 2px solid black;
+}
+div{
+    height: 140px;
+    width: 140px;
+    background-color: rgba(208, 64, 208, 0.687);
+    margin: 10px;
+}
