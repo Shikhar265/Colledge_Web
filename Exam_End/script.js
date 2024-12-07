@@ -1,15 +1,11 @@
-// script.js
-
 const productContainer = document.getElementById("productContainer");
 let allProducts = [];
 
-// Function to fetch and display products
 async function fetchProducts() {
   try {
     const response = await fetch("https://fakestoreapi.com/products");
     const products = await response.json();
 
-    // Filter and restructure the data
     allProducts = products.map(product => ({
       image: product.image,
       title: product.title,
@@ -25,7 +21,6 @@ async function fetchProducts() {
   }
 }
 
-// Function to display products
 function displayProducts(products) {
   productContainer.innerHTML = "";
   if (products.length === 0) {
@@ -48,7 +43,6 @@ function displayProducts(products) {
   });
 }
 
-// Function to handle search
 function searchProducts() {
   const searchInput = document.getElementById("searchInput").value.toLowerCase();
   const filteredProducts = allProducts.filter(product =>
@@ -58,5 +52,4 @@ function searchProducts() {
   displayProducts(filteredProducts);
 }
 
-// Initial fetch on page load
 fetchProducts();
